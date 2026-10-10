@@ -1,0 +1,41 @@
+// Photography from Unsplash (free to use under the Unsplash License).
+// For production, download these and host them locally in /public/images.
+const IDS = {
+  hero: '1600210492486-724fe5c67fb0',
+  sofaTan: '1540574163026-643ea20ade25',
+  sofaGreen: '1555041469-a586c61ea9bc',
+  bedWood: '1578683010236-d716f9a3f461',
+  bedDark: '1617104678098-de229db51175',
+  dining: '1617806118233-18e1de247200',
+  diningRoom: '1560185007-cde436f6a4d0',
+  storage: '1595428774223-ef52624120d2',
+  sideboard: '1618219908412-a29a1bb7b86e',
+  lounge: '1586023492125-27b2c045efd7',
+  coffee: '1489171078254-c3365d6e359f',
+  coffeeRound: '1583847268964-b28dc8f51f92',
+  tvConsole: '1594026112284-02bb6f3352fe',
+  tvUnit: '1493809842364-78817add7ffb',
+  desk: '1530018607912-eff2daa1bac4',
+  study: '1597072689227-8882273e8f6a',
+  sketch: '1503387762-592deb58ef4e',
+  plans: '1581092160562-40aa08e78837',
+  wood: '1532372320572-cda25653a26d',
+  joinery: '1504148455328-c376907d081c',
+  upholstery: '1567016432779-094069958ea5',
+  styledHome: '1615874959474-d609969a20ed',
+  livingLux: '1598928506311-c55ded91a20c',
+  bedroomMod: '1616594039964-ae9021a400a0',
+  kitchen: '1600585152220-90363fe7e115',
+  fullHome: '1618221195710-dd6b41faaea6',
+  office: '1497366216548-37526070297c',
+  galLiving: '1616486338812-3dadae4b4ace',
+  galBedroom: '1586105251261-72a756497a11',
+  galDining: '1618220179428-22790b461013',
+  galWood: '1600607687939-ce8a6c25118c',
+  galApartment: '1565182999561-18d7dc61c393',
+  showroom: '1556228453-efd6c1ff04f6',
+  contact: '1522708323590-d24dbb6b0267',
+}
+
+export const img = (key, w = 900, h) =>
+  `https://images.unsplash.com/photo-${IDS[key]}?auto=format&fit=crop&w=${w}${h ? `&h=${h}` : ''}&q=75`
